@@ -1,6 +1,6 @@
 # Hi there, I'm Abhishek Verma! 👋
 
-A Pharmacy undergraduate blending pharmaceutical sciences with modern data analytics. Passionate about using data-driven methods to solve real-world problems in drug safety, quality control, and clinical workflows.
+A Pharmacy undergrad blending pharmaceutical sciences with modern data analytics. Passionate about using data-driven methods to solve real-world problems in drug safety, quality control, and clinical workflows.
 
 ---
 
