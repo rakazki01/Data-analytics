@@ -4,10 +4,10 @@ As a pharmacy student transitioning into data analytics, understanding the four 
 
 | Measure | Descriptive | Diagnostic | Predictive | Prescriptive |
 | :--- | :--- | :--- | :--- | :--- |
-| **Core Question** | What happened?[cite: 1] | Why did it happen?[cite: 1] | What may happen next?[cite: 1] | What should we do?[cite: 1] |
-| **Main Focus** | Summarizing past data[cite: 1] | Identifying root causes[cite: 1] | Forecasting future outcomes[cite: 1] | Recommending actionable strategies[cite: 1] |
-| **Complexity** | Relatively simple ⭐[cite: 1] | Moderately complex ⭐⭐[cite: 1] | Advanced (Statistical Modeling) ⭐⭐⭐[cite: 1] | Highly Advanced (Optimization & AI) ⭐⭐⭐⭐[cite: 1] |
-| **Value** | Visibility[cite: 1] | Understanding[cite: 1] | Foresight[cite: 1] | Strategic Action[cite: 1] |
+| **Core Question** | What happened? | Why did it happen? | What may happen next? | What should we do? |
+| **Main Focus** | Summarizing past data | Identifying root causes | Forecasting future outcomes | Recommending actionable strategies |
+| **Complexity** | Relatively simple ⭐ | Moderately complex ⭐⭐ | Advanced (Statistical Modeling) ⭐⭐⭐ | Highly Advanced (Optimization & AI) ⭐⭐⭐⭐ |
+| **Value** | Visibility | Understanding | Foresight | Strategic Action |
 
 ### 💡 Healthcare Context:
 - **Descriptive:** Adverse drug event reporting frequency.
