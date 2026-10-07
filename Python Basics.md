@@ -116,7 +116,7 @@ print(is_empty)        # Output: False
 
 ---
 
-### 💡 Key Takeaways
+### 💡 Key Understanding:
 - Selecting the correct data type optimizes execution speed and memory usage.
 - Converting between types via `int()`, `float()`, `str()`, and `bool()` is essential when handling raw inputs and structured datasets.
 
@@ -232,7 +232,7 @@ print(replaced)            # Output: 'I love Programming'
 
 ---
 
-### 💡 Key Takeaways
+### 💡 Key Understanding:
 - Python strings use zero-based indexing for standard traversal and negative indices for reverse traversal.
 - Slicing boundaries follow an open interval `[start, end)` where the stop index is excluded.
 - Because strings are immutable, methods like `.upper()`, `.lower()`, and `.replace()` return new strings rather than altering the original variable in place.
