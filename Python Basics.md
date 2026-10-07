@@ -72,10 +72,10 @@ Data types define the **type of data a variable can hold**, specifying how the i
 
 | Data Type | Description | Example Values |
 | :--- | :--- | :--- |
-| **Integer (`int`)** | Whole numbers without decimals[cite: 15] | `5`, `-20` |
-| **Float (`float`)** | Fractional numbers with decimal points[cite: 15] | `3.14`, `-7.89` |
-| **String (`str`)** | Text data enclosed in quotes[cite: 15] | `"Hello"`, `'Python'` |
-| **Boolean (`bool`)** | Logical truth values[cite: 15] | `True`, `False` |
+| **Integer (`int`)** | Whole numbers without decimals | `5`, `-20` |
+| **Float (`float`)** | Fractional numbers with decimal points | `3.14`, `-7.89` |
+| **String (`str`)** | Text data enclosed in quotes | `"Hello"`, `'Python'` |
+| **Boolean (`bool`)** | Logical truth values | `True`, `False` |
 
 ---
 
