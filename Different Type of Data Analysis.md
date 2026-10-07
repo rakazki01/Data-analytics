@@ -1,4 +1,4 @@
-# 📊 Types of Data Analysis: Notes & Breakdown
+#  Types of Data Analysis: 
 
 As a pharmacy student transitioning into data analytics, understanding the four layers of data analysis is crucial for clinical research, drug safety, and operational decisions.
 
@@ -9,7 +9,7 @@ As a pharmacy student transitioning into data analytics, understanding the four 
 | **Complexity** | Relatively simple ⭐ | Moderately complex ⭐⭐ | Advanced (Statistical Modeling) ⭐⭐⭐ | Highly Advanced (Optimization & AI) ⭐⭐⭐⭐ |
 | **Value** | Visibility | Understanding | Foresight | Strategic Action |
 
-### 💡 Healthcare Context:
+###  Healthcare POV:
 - **Descriptive:** Adverse drug event reporting frequency.
 - **Diagnostic:** Analyzing why certain batches failed stability tests.
 - **Predictive:** Forecasting medication demand and clinical trial recruitment timelines.
