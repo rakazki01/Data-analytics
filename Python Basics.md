@@ -114,7 +114,14 @@ print(is_empty)        # Output: False
 ```
 *(Code examples demonstrating explicit type casting between integer, float, string, and boolean)*
 
-# 🔤 Python Fundamentals: Complete String Manipulation Guide
+---
+
+### 💡 Key Takeaways
+- Selecting the correct data type optimizes execution speed and memory usage.
+- Converting between types via `int()`, `float()`, `str()`, and `bool()` is essential when handling raw inputs and structured datasets.
+
+
+# 🐍 Python Fundamentals: Complete String Manipulation Guide
 
 A comprehensive breakdown of string properties, indexing, slicing, escape formatting, and common built-in methods in Python.
 
@@ -230,8 +237,3 @@ print(replaced)            # Output: 'I love Programming'
 - Slicing boundaries follow an open interval `[start, end)` where the stop index is excluded.
 - Because strings are immutable, methods like `.upper()`, `.lower()`, and `.replace()` return new strings rather than altering the original variable in place.
 
----
-
-### 💡 Key Takeaways
-- Selecting the correct data type optimizes execution speed and memory usage.
-- Converting between types via `int()`, `float()`, `str()`, and `bool()` is essential when handling raw inputs and structured datasets.
