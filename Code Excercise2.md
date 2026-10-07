@@ -1,15 +1,15 @@
-# 🔄 Practice: Explicit Type Casting & Type Verification in Python
+#  Practice: Explicit Type Casting & Type Verification in Python
 
 A hands-on implementation demonstrating explicit type conversion (typecasting) and validating variable data types using the built-in `type()` function in Python.
 
 ---
 
-### 📝 Problem Context
+###  Problem Context
 In data processing and pipeline development, raw incoming records often arrive in mismatched formats (e.g., numeric values stored as text strings). Explicit casting ensures values are parsed correctly before performing mathematical operations or database commits.
 
 ---
 
-### 💻 Python Implementation
+###  Python Implementation
 
 ```python
 # 1. Convert string representation of an integer to a numerical int
@@ -30,7 +30,7 @@ print(str_bool, type(str_bool))
 
 ---
 
-### 🖥️ Console Output
+###  Console Output
 
 ```text
 25 <class 'int'>
@@ -40,7 +40,7 @@ True <class 'str'>
 
 ---
 
-### 🔍 Technical Breakdown
+###  Technical Breakdown
 
 | Original Value | Target Type | Constructor | Output Value | Data Class |
 | :--- | :--- | :--- | :--- | :--- |
@@ -50,6 +50,6 @@ True <class 'str'>
 
 ---
 
-### 💡 Key Takeaways
+###  Key Points:
 - The `type()` function outputs the object class (e.g., `<class 'int'>`, `<class 'str'>`), confirming whether conversion was successful.
 - Converting strings to numbers enables arithmetic operations, while converting values to strings allows concatenation and text-based logging.
