@@ -5,9 +5,9 @@ A Pharmacy undergrad blending pharmaceutical sciences with modern data analytics
 ---
 
 ### 🔬 What I Do
-- 💊 **Domain:** Pharmaceutical Sciences, cGMP, Quality Control & Pharmacovigilance.
-- 📊 **Tech & Data:** Data Analytics, Advanced Excel, Python & SQL.
-- 🎯 **Current Focus:** Upskilling in data analytics workflows and Focused on building practical healthcare data projects.
+-  **Domain:** Pharmaceutical Sciences, cGMP, Quality Control & Pharmacovigilance.
+-  **Tech & Data:** Data Analytics, Advanced Excel, Python & SQL.
+-  **Current Focus:** Upskilling in data analytics workflows and Focused on building practical healthcare data projects.
 
 ---
 
