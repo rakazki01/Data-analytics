@@ -1,4 +1,4 @@
-# 🥚 Practice Problem: Inventory Tracking with Variables & Expressions
+#  Practice Problem: Inventory Tracking with Variables & Expressions
 
 A beginner friendly practical demonstration showing how to manage incoming supplies, daily usage, and inventory balances using Python variables and arithmetic expressions.
 
