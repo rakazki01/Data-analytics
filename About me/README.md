@@ -20,7 +20,8 @@ A Pharmacy undergrad blending pharmaceutical sciences with modern data analytics
 ---
 
 ### 📂 Repository Highlights
-- **Data Analytics Fundamentals:** Python Basics, Python for Data Analytics, Different types of Data Analysis, Data Analysis Process, Programming languages in Data Analysis, Quiz Exercises & Coding Exercises
+- **Data Analytics Fundamentals:** Python Basics, Python for Data Analytics, Different types of Data Analysis, Data Analysis Process, Programming languages in Data Analysis, Quiz Exercises & Coding Exercises
+
 
 ---
 
