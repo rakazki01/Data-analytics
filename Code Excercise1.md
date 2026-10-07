@@ -1,10 +1,10 @@
 # 🥚 Practice Problem: Inventory Tracking with Variables & Expressions
 
-A beginner-friendly practical demonstration showing how to manage incoming supplies, daily usage, and inventory balances using Python variables and arithmetic expressions.
+A beginner friendly practical demonstration showing how to manage incoming supplies, daily usage, and inventory balances using Python variables and arithmetic expressions.
 
 ---
 
-### 📝 Problem Statement
+###  Problem Statement
 A small kitchen tracks egg consumption over three consecutive days:
 - Calculate total units purchased.
 - Calculate total units consumed.
@@ -12,7 +12,7 @@ A small kitchen tracks egg consumption over three consecutive days:
 
 ---
 
-### 💻 Python Implementation
+###  Python Implementation
 
 ```python
 # Daily purchases
@@ -40,7 +40,7 @@ print("Remaining eggs after 3 days:", remaining_eggs)
 
 ---
 
-### 🖥️ Console Output
+###  Console Output
 
 ```text
 Total eggs bought in 3 days: 30
@@ -50,7 +50,7 @@ Remaining eggs after 3 days: 15
 
 ---
 
-### 🔍 Concept Breakdown
+### The Concept Breakdown
 
 | Component | Code Reference | Description |
 | :--- | :--- | :--- |
