@@ -234,6 +234,6 @@ print(replaced)            # Output: 'I love Programming'
 
 ### 💡 Key Understanding:
 - Python strings use zero-based indexing for standard traversal and negative indices for reverse traversal.
-- Slicing boundaries follow an open interval `[start, end)` where the stop index is excluded.
+- Slicing boundaries follow an open interval `[start, end]` where the stop index is excluded.
 - Because strings are immutable, methods like `.upper()`, `.lower()`, and `.replace()` return new strings rather than altering the original variable in place.
 
