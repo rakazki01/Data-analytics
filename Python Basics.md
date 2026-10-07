@@ -237,3 +237,116 @@ print(replaced)            # Output: 'I love Programming'
 - Slicing boundaries follow an open interval `[start, end]` where the stop index is excluded.
 - Because strings are immutable, methods like `.upper()`, `.lower()`, and `.replace()` return new strings rather than altering the original variable in place.
 
+# 🐍 Python Hands-on: String Operations & Manipulations Practice
+
+A practical implementation showcasing fundamental string operations, including positive and negative indexing, slicing, striding, string length evaluation, concatenation, escape character formatting, and built-in case and replace methods.
+
+---
+
+###  Code Implementations & Outputs
+
+#### 1. Forward & Backward Indexing
+Accessing characters using zero-based positive index and negative reverse index.
+
+```python
+python = "PYTHON"
+
+# Extract character at index 3 (4th position)
+python = python[3]
+print(python)
+# Output: 'H'
+
+# Extract second-to-last character using negative indexing
+python = "PYTHON"
+secondlast_chr = python[-2]
+print(secondlast_chr)
+# Output: 'O'
+```
+*(Code and output based on notebook implementations)*
+
+---
+
+#### 2. Slicing & Striding
+Extracting specific substrings and skipping characters with custom step sizes.
+
+```python
+python = "PYTHON"
+
+# Extract substring "THON" using slicing
+extract_thon = python[2:6]
+print(extract_thon)
+# Output: 'THON'
+
+# Extract every second character starting from index 0
+everysecond_chr = python[0:5:2]
+print(everysecond_chr)
+# Output: 'PTO'
+```
+*(Code and output based on notebook implementations)*
+
+---
+
+#### 3. Length Evaluation & String Concatenation
+Measuring total string character count and merging string variables.
+
+```python
+python = "PYTHON"
+
+# Evaluating string length
+print(len("PYTHON"))
+# Output: 6
+
+# Combining string variables with a space separator
+python_a = "hello"
+python_b = "world"
+complete = "hello" + " " + "world"
+print(complete)
+# Output: 'hello world'
+```
+*(Code and output based on notebook implementations)*
+
+---
+
+#### 4. Escape Sequences, Case Transformation & Replacement
+Formatting layout with escape characters, altering string casing, and updating substrings.
+
+```python
+# Escape sequences: newline (\n) and tab (\t)
+print("hello\n\tworld")
+# Output:
+# hello
+# 	world
+
+# Case conversion methods
+python = "python"
+print(python.upper())
+# Output: PYTHON
+
+python = "PYTHON"
+print(python.lower())
+# Output: python
+
+# Substring replacement
+python = "I LOVE FOOD"
+python = python.replace("FOOD", "GYM")
+print(python)
+# Output: 'I LOVE GYM'
+```
+*(Code and output based on notebook implementations)*
+
+---
+
+###  Operations Summary chart:
+
+| Category | Syntax / Method | Executed Example | Output |
+| :--- | :--- | :--- | :--- |
+| **Forward Indexing** | `str[i]` | `"PYTHON"[3]` | `'H'` |
+| **Negative Indexing** | `str[-i]` | `"PYTHON"[-2]` | `'O'` |
+| **Slicing** | `str[start:end]` | `"PYTHON"[2:6]` | `'THON'` |
+| **Striding** | `str[start:end:step]` | `"PYTHON"[0:5:2]` | `'PTO'` |
+| **Length** | `len(str)` | `len("PYTHON")` | `6` |
+| **Concatenation** | `+` | `"hello" + " " + "world"` | `'hello world'` |
+| **Escape Formatting**| `\n`, `\t` | `"hello\n\tworld"` | Multiline tabbed text |
+| **Uppercase** | `.upper()` | `"python".upper()` | `'PYTHON'` |
+| **Lowercase** | `.lower()` | `"PYTHON".lower()` | `'python'` |
+| **Replace** | `.replace(old, new)` | `"I LOVE FOOD".replace("FOOD", "GYM")` | `'I LOVE GYM'` |
