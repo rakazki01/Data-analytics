@@ -114,6 +114,122 @@ print(is_empty)        # Output: False
 ```
 *(Code examples demonstrating explicit type casting between integer, float, string, and boolean[cite: 17])*
 
+# 🔤 Python Fundamentals: Complete String Manipulation Guide
+
+A comprehensive breakdown of string properties, indexing, slicing, escape formatting, and common built-in methods in Python.
+
+---
+
+### 1. String Definition & Formats
+A string is a **sequence of characters enclosed in quotes**, representing text data in Python. Strings are **immutable**, meaning they cannot be modified after creation.
+
+- **Word String:** Contains a single word (e.g., `"Python"`).
+- **String with Spaces:** Contains multiple words separated by spaces (e.g., `"Learn Python Programming"`).
+- **String with Numbers:** Includes numeric characters treated strictly as text (e.g., `"12345"`, `"Python3"`).
+
+---
+
+### 2. Forward & Backward Indexing
+Each character in a string can be accessed using its numerical index position:
+- **Forward Indexing:** Starts from `0` at the beginning of the string.
+- **Backward (Negative) Indexing:** Starts from `-1` representing the last character, `-2` for the second to last, and so on.
+
+| Character | P | y | t | h | o | n |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Forward Index** | `0` | `1` | `2` | `3` | `4` | `5` |
+| **Negative Index** | `-6` | `-5` | `-4` | `-3` | `-2` | `-1` |
+
+```python
+my_string = "Python"
+
+# Forward indexing
+print(my_string[0])     # Output: 'P'
+print(my_string[3])     # Output: 'h'
+
+# Negative indexing
+print(my_string[-1])    # Output: 'n'
+print(my_string[-4])    # Output: 't'
+```
+
+---
+
+### 3. Slicing & Striding
+Extract subsets of characters using indexing boundaries:
+
+- **Slicing Syntax:** `string[start : end]` *(Note: `end` index is exclusive)*.
+- **Striding Syntax:** `string[start : end : step]` *(Defines step interval between characters)*.
+
+```python
+my_string = "Programming"
+
+# Slicing: Extracts indices 0 through 5
+sliced = my_string[0:6]
+print(sliced)           # Output: 'Progra'
+
+# Striding: Skips every second character
+strided = my_string[0:11:2]
+print(strided)          # Output: 'Pormig'
+```
+
+---
+
+### 4. String Operations & Escape Sequences
+
+#### String Length (`len()`):
+Returns the total character count (including spaces and symbols).
+```python
+my_string = "Python"
+print(len(my_string))   # Output: 6
+```
+
+#### Concatenation (`+`):
+Joins two or more strings together using the `+` operator.
+```python
+string1 = "Hello"
+string2 = "World"
+result = string1 + " " + string2
+print(result)           # Output: 'Hello World'
+```
+
+#### Escape Sequences:
+Used to represent special formatting inside string literals:
+- `\n`: Inserts a newline.
+- `\t`: Inserts a horizontal tab.
+
+```python
+print("Hello\nWorld")          # Prints 'Hello' and 'World' on separate lines
+print("Python\tProgramming")   # Prints with tab spacing between words
+```
+
+---
+
+### 5. Essential Built-in String Methods
+
+#### Case Conversion (`upper()` & `lower()`):
+Converts all characters to uppercase or lowercase without altering the original string.
+```python
+my_string = "Python"
+print(my_string.upper())   # Output: 'PYTHON'
+print(my_string.lower())   # Output: 'python'
+```
+
+#### Replacing Substrings (`replace()`):
+Replaces all occurrences of a specified substring with a new string.
+- **Syntax:** `string.replace(old, new)`
+
+```python
+my_string = "I love Python"
+replaced = my_string.replace("Python", "Programming")
+print(replaced)            # Output: 'I love Programming'
+```
+
+---
+
+### 💡 Key Takeaways
+- Python strings use zero-based indexing for standard traversal and negative indices for reverse traversal.
+- Slicing boundaries follow an open interval `[start, end)` where the stop index is excluded.
+- Because strings are immutable, methods like `.upper()`, `.lower()`, and `.replace()` return new strings rather than altering the original variable in place.
+
 ---
 
 ### 💡 Key Takeaways
