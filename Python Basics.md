@@ -54,7 +54,7 @@ print(sum_value)    # Output: 30
 
 ---
 
-### Key Takeaways
+### Key Understanding:
 - Variables can hold results of any valid expression[cite: 14].
 - Expressions make Python programs dynamic and flexible[cite: 14].
 - Reusing variables in expressions allows for concise and maintainable code[cite: 14].
