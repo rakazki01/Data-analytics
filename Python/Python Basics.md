@@ -350,3 +350,140 @@ print(python)
 | **Uppercase** | `.upper()` | `"python".upper()` | `'PYTHON'` |
 | **Lowercase** | `.lower()` | `"PYTHON".lower()` | `'python'` |
 | **Replace** | `.replace(old, new)` | `"I LOVE FOOD".replace("FOOD", "GYM")` | `'I LOVE GYM'` |
+
+# 🐍 Python Data Structures: Hands-On Guide to Tuples & Lists
+
+A complete reference combining theoretical concepts and practical Jupyter Notebook implementations covering creation, immutability, mutability, concatenation, indexing, slicing, striding, nested hierarchies, and list modifications.
+
+---
+
+### 1. Conceptual Breakdown: Tuples vs. Lists
+
+| Feature | Tuples (`tuple`) | Lists (`list`) |
+| :--- | :--- | :--- |
+| **Mutability** | **Immutable** (read-only sequence) | **Mutable** (modifiable in place) |
+| **Syntax** | Parentheses `()` | Square brackets `[]` |
+| **Ordering** | Ordered sequence | Ordered sequence |
+| **Duplicates** | Allowed | Allowed |
+| **Element Types** | Heterogeneous (int, str, float, etc.) | Heterogeneous (int, str, float, etc.) |
+
+---
+
+### 2. Practical Tuples: Code & Notebook Outputs
+
+#### A. Creation & Concatenation
+Tuples store multiple items in a single variableand combine through concatenation (`+` operator).
+
+```python
+# Creating a tuple
+tuples = ("snacks", "soda", "drink")
+print(tuples)
+# Output: ('snacks', 'soda', 'drink')
+
+# Combining two tuples using '+'
+item1 = (1, 2, 3)
+item2 = (4, 5, 6)
+total = item1 + item2
+print(total)
+# Output: (1, 2, 3, 4, 5, 6)
+```
+*(Code and console outputs executed in workbook)*
+
+#### B. Slicing Tuples
+Extracting subsets using `tuple[start:end]` (start inclusive, end exclusive).
+
+```python
+item = (1, 2, 3, 4, 5, 6)
+sliced_item = item[0:5]
+print(sliced_item)
+# Output: (1, 2, 3, 4, 5)
+```
+*(Code and console outputs executed in workbook)*
+
+#### C. Nested Tuples
+Tuples containing inner tuples accessed via coordinate indexing.
+
+```python
+nested = (("a", "b", "c"), (1, 2, 3), ("zz", "bc", "kk"))
+
+# Accessing inner tuple at index 1
+print(nested[1])
+# Output: (1, 2, 3)
+
+# Accessing inner tuple at index 2
+print(nested[2])
+# Output: ('zz', 'bc', 'kk')
+```
+*(Code and console outputs executed in workbook)*
+
+---
+
+### 3. Practical Lists: Code & Notebook Outputs
+
+#### A. Creation & Backward Slicing
+Lists are defined with square brackets and support negative indices for reverse traversal.
+
+```python
+# Creating a list
+my_list = [1, 2, 3]
+print(my_list)
+# Output: [1, 2, 3]
+
+# Backward slicing with negative indexing
+fruits_list = ["apple", "orange", "guava"]
+sliced_list = fruits_list[-2:-1]
+print(sliced_list)
+# Output: ['orange']
+```
+*(Code and console outputs executed in workbook)*
+
+#### B. List Striding
+Skipping items along an index boundary using `list[start:end:step]`.
+
+```python
+num_list = [10, 20, 30, 40, 50, 60]
+
+# Slicing from index 0 to 3 with step 2
+strided_list = num_list[0:3:2]
+print(strided_list)
+# Output: [10, 30]
+```
+*(Code and console outputs executed in workbook)*
+
+#### C. Nested List Slicing
+Sub-setting collections of lists within parent lists.
+
+```python
+nested_list = [[0, 1, 2], ["a", "b", "c"], [0.1, 0.2, 0.3]]
+
+# Extracting first two sub-lists
+sliced_nested_list = nested_list[0:2]
+print(sliced_nested_list)
+# Output: [[0, 1, 2], ['a', 'b', 'c']]
+```
+*(Code and console outputs executed in workbook)*
+
+#### D. Dynamic Modifications (Append & Remove)
+Modifying mutable list instances directly in memory.
+
+```python
+# Appending an item to the end
+items = [1, 2, 3]
+items.append(4)
+print(items)
+# Output: [1, 2, 3, 4]
+
+# Removing a specific value
+nums = [0, 1, 2, 3, 4]
+nums.remove(3)
+print(nums)
+# Output: [0, 1, 2, 4]
+```
+*(Code and console outputs executed in workbook)*
+
+---
+
+### KEY UNDERSTANDING: 
+- **Tuples** guarantee data integrity for fixed reference collections where accidental modification must be prevented.
+- **Lists** provide flexible dynamic collections for data cleaning, transformation pipelines, and runtime updates.
+- Both support multi-dimensional **nesting**, bounded **slicing**, and **striding**.
