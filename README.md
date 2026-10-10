@@ -15,7 +15,7 @@ A Pharmacy undergrad blending pharmaceutical sciences with modern data analytics
 - **Programming & Scripting:** Python (Pandas, NumPy, Matplotlib, Scikit-learn), SQL
 - **Data Analysis & BI:** Microsoft Excel, Data Visualization, Statistical Software (SPSS, SAS)
 - **Pharmaceutical Domain:** cGMP, Quality Control (QC), Pharmacovigilance (PV), Medical Coding
-- **Version Control & Tools:** GitHub,VS code 
+- **Version Control & Tools:** GitHub,VS code, jupyter Notebook 
 
 ---
 
