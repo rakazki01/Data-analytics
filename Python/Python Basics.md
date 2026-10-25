@@ -618,7 +618,6 @@ print("Union:", union_set)
 
 # 🐍 Python Intermediate Core: Control Flow, OOP, File Handling & APIs
 
-A comprehensive workbook synthesizing essential intermediate Python concepts: **Conditional Branching**, **Loops & Iteration**, **Modular Functions**, **Exception Handling**, **Object-Oriented Programming (OOP)**, **Data Analysis with Pandas**, **Web Formats (JSON/XML)**, and **Web Scraping & APIs.**
 ---
 
 ## 1. Conditions & Branching 
