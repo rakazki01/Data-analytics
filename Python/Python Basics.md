@@ -616,3 +616,261 @@ print("Union:", union_set)
 - Sets provide average time complexity for membership testing (`in`), making them faster than lists for lookup tasks.
 - Perfect for **data cleaning pipelines** when filtering out duplicate patient IDs, batch records, or categorical labels.
 
+# 🐍 Python Intermediate Core: Control Flow, OOP, File Handling & APIs
+
+A comprehensive workbook synthesizing essential intermediate Python concepts: **Conditional Branching**, **Loops & Iteration**, **Modular Functions**, **Exception Handling**, **Object-Oriented Programming (OOP)**, **Data Analysis with Pandas**, **Web Formats (JSON/XML)**, and **Web Scraping & APIs.**
+---
+
+## 1. Conditions & Branching (`7. Cond and Branch.pptx`)
+
+Conditions are expressions evaluating to `True` or `False`, directing the logical execution flow using comparison and logical operators (`and`, `or`, `not`).
+### Comparison Operators:
+- `==` (Equal), `!=` (Not equal), `>`, `<`, `>=`, `<=`
+
+```python
+# Comparison
+a, b = 10, 20
+print(a == b)  # False
+print(a < b)   # True
+
+# Branching with logical operators ('and' / 'or')
+age = 25
+income = 50000
+
+if age > 18 and income > 30000:
+    print("Eligible for loan")
+else:
+    print("Not eligible for loan")
+
+# Multi-condition with if-elif-else
+score = 85
+if score >= 90:
+    grade = "Grade A"
+elif score >= 75:
+    grade = "Grade B"
+else:
+    grade = "Grade C"
+print(grade)  # Output: Grade B
+```
+*(Branching structures and logical expressions implemented)*
+
+---
+
+## 2. Loops & Iterations (`8. loop.pptx`)
+
+Loops automate repetitive tasks across sequences or until a termination condition is reached.
+
+- **`for` loop:** Iterates across collections or a generator like `range(start, stop, step)`.
+- **`enumerate()`:** Traverses an iterable while maintaining an automatic index counter.
+- **`while` loop:** Executes repeatedly as long as the test condition remains `True`.
+
+```python
+# 1. For loop over sequence
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+# 2. range() iteration (stop index is exclusive)
+for num in range(1, 6):
+    print(num, end=" ")  # Output: 1 2 3 4 5
+print()
+
+# 3. enumerate() index-value pairing
+names = ["Alice", "Bob", "Charlie"]
+for index, name in enumerate(names):
+    print(f"Index: {index}, Name: {name}")
+
+# 4. while loop with manual counter
+numbers = []
+i = 1
+while i <= 5:
+    numbers.append(i)
+    i += 1
+print("Numbers:", numbers)  # Output: [1, 2, 3, 4, 5]
+```
+*(Iteration patterns and looping structures)*
+
+---
+
+## 3. Functions & Scope (`9. functions.pptx`)
+
+Functions modularize code into reusable, organized blocks, improving maintainability and reducing repetition.
+
+- **`return` vs. `print`:** `return` sends data back to the calling scope for subsequent operations, whereas `print` merely writes text to stdout.
+- **Scope:** Variables declared inside functions are **local**, while variables defined at the script root are **global** (requiring the `global` keyword for in-place re-assignment).
+
+```python
+# Function with validation, calculation, and return
+def process_temperature(temp):
+    if temp < -273.15:
+        return "Invalid temperature! Below absolute zero."
+    elif temp > 100:
+        return "Temperature exceeds boiling point!"
+    else:
+        return f"Temperature in Fahrenheit: {temp * 9/5 + 32}"
+
+print(process_temperature(50))  # 122.0
+
+# Global vs Local Scope
+counter = 0
+
+def increment():
+    global counter
+    counter += 1
+
+increment()
+print("Counter:", counter)  # Output: 1
+```
+*(Function declarations, scope handling, and control returns)*
+
+---
+
+## 4. Exception Handling (`10. Exception Handling.pptx`)
+
+Prevents catastrophic runtime crashes by catching and managing errors gracefully.
+
+- **Common Exceptions:** `ZeroDivisionError`, `ValueError`, `FileNotFoundError`, `SyntaxError`.
+- **Structure:**
+  - `try`: Code that might raise an unexpected exception.
+  - `except`: Fallback routine triggered when the matching exception fires.
+  - `else`: Executes strictly when **no** exceptions were raised.
+
+```python
+def safe_divide(num_str):
+    try:
+        num = int(num_str)
+        result = 10 / num
+    except ZeroDivisionError:
+        return "Error: Division by zero is not allowed."
+    except ValueError:
+        return "Error: Invalid input. Please enter a numeric value."
+    else:
+        return f"Success! The result is: {result}"
+
+print(safe_divide("5"))   # Success! The result is: 2.0
+print(safe_divide("0"))   # Error: Division by zero is not allowed.
+print(safe_divide("abc")) # Error: Invalid input. Please enter a numeric value.
+```
+*(Robust runtime error isolation using try-except-else)*
+
+---
+
+## 5. Object-Oriented Programming: Classes & Objects (`11. Class and Object.pptx`)
+
+Classes serve as blueprints containing state (**attributes**) and behavior (**methods**)[cite: 48]. An object is a concrete instance of that class.
+
+```python
+class Calculator:
+    # Constructor initializing instance-specific attributes
+    def __init__(self, num1, num2):
+        self.num1 = num1
+        self.num2 = num2
+
+    # Instance method
+    def add(self):
+        return self.num1 + self.num2
+
+# Object instantiation and method invocation
+calc = Calculator(5, 3)
+print("Calculator Addition:", calc.add())  # Output: 8
+```
+*(Class architecture and instance method calls)*
+
+---
+
+## 6. Data Wrangling with Pandas (`13. RW with Pandas.pptx`)
+
+Pandas provides structured data manipulation using DataFrames, enabling efficient ingestion, filtering, and export across tabular formats.
+
+```python
+import pandas as pd
+
+# Creating a DataFrame from a dictionary
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [25, 30, 35],
+    'City': ['New York', 'San Francisco', 'Los Angeles']
+}
+df = pd.DataFrame(data)
+
+# Inspection methods
+print(df.head(2))  # First 2 rows
+print(df.tail(1))  # Last 1 row
+
+# Exporting data without row index
+df.to_csv('output.csv', index=False)
+df.to_excel('output.xlsx', index=False)
+```
+*(Ingestion, tabular inspection, and disk serialization)*
+
+---
+
+## 7. Data Formats: JSON & XML (`14. JSON & XML.pptx`)
+
+Standard serialization schemas used in REST APIs and configuration files:
+- **JSON:** Lightweight key-value structures parsed with the built-in `json` module (`json.load` / `json.loads`).
+- **XML:** Tag-based hierarchical trees parsed using `xml.etree.ElementTree`.
+
+```python
+import json
+import xml.etree.ElementTree as ET
+
+# Parsing JSON string
+json_str = '{"name": "Alice", "age": 25, "skills": ["Python", "JavaScript"]}'
+json_data = json.loads(json_str)
+print("JSON Name:", json_data["name"])
+
+# Parsing XML string
+xml_str = '''<employee>
+    <name>Alice</name>
+    <age>25</age>
+</employee>'''
+root = ET.fromstring(xml_str)
+print("XML Name:", root.find("name").text)
+```
+*(Parsing nested markup and key-value formats)*
+
+---
+
+## 8. Web Ingestion: REST APIs & BeautifulSoup (`14. API.pptx` & `15. HTML and BTS.pptx`)
+
+Modern analytics pipelines often require pulling data from external endpoints or web scrapers:
+- **REST APIs:** Stateless HTTP communication using verbs like `GET`, `POST`, `PUT`, `DELETE`.
+- **BeautifulSoup (`bs4`):** HTML/XML parser used to locate tags, links, and tabular elements from web markup.
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+# 1. Conceptual REST API Call pattern
+# response = requests.get("[https://api.openweathermap.org/data/2.5/weather?q=London&appid=API_KEY](https://api.openweathermap.org/data/2.5/weather?q=London&appid=API_KEY)")
+
+# 2. Parsing HTML with BeautifulSoup
+html_doc = """
+<html>
+    <head><title>Test Page</title></head>
+    <body>
+        <h1>Headline</h1>
+        <p>Paragraph content</p>
+        <a href="[https://example.com/data](https://example.com/data)">Download Link</a>
+    </body>
+</html>
+"""
+
+soup = BeautifulSoup(html_doc, 'html.parser')
+
+# Extract title and links
+print("Page Title:", soup.title.string)
+links = soup.find_all('a')
+for link in links:
+    print("Found URL:", link.get('href'))
+```
+*(Stateless request design and document parsing)*
+
+---
+
+### KEY UNDERSTANDING:
+1. **Flow Control & Defense:** Conditions and loops dictate execution pathways, while `try-except-else` guarantees resilient error recovery.
+2. **Encapsulation:** Functions and OOP bundle tasks and state into reusable, testable logic blocks.
+3. **Pipeline Ingestion:** Pandas, APIs, and parsers (`json`, `xml`, `bs4`) form the end-to-end foundation for modern data engineering and analytics.
+
