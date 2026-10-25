@@ -618,8 +618,6 @@ print("Union:", union_set)
 
 # 🐍 Python Intermediate Core: Control Flow, OOP, File Handling & APIs
 
----
-
 ## 1. Conditions & Branching 
 
 Conditions are expressions evaluating to `True` or `False`, directing the logical execution flow using comparison and logical operators (`and`, `or`, `not`).
