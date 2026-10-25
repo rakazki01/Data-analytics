@@ -621,7 +621,7 @@ print("Union:", union_set)
 A comprehensive workbook synthesizing essential intermediate Python concepts: **Conditional Branching**, **Loops & Iteration**, **Modular Functions**, **Exception Handling**, **Object-Oriented Programming (OOP)**, **Data Analysis with Pandas**, **Web Formats (JSON/XML)**, and **Web Scraping & APIs.**
 ---
 
-## 1. Conditions & Branching (`7. Cond and Branch.pptx`)
+## 1. Conditions & Branching 
 
 Conditions are expressions evaluating to `True` or `False`, directing the logical execution flow using comparison and logical operators (`and`, `or`, `not`).
 ### Comparison Operators:
@@ -656,7 +656,7 @@ print(grade)  # Output: Grade B
 
 ---
 
-## 2. Loops & Iterations (`8. loop.pptx`)
+## 2. Loops & Iterations 
 
 Loops automate repetitive tasks across sequences or until a termination condition is reached.
 
@@ -692,7 +692,7 @@ print("Numbers:", numbers)  # Output: [1, 2, 3, 4, 5]
 
 ---
 
-## 3. Functions & Scope (`9. functions.pptx`)
+## 3. Functions & Scope 
 
 Functions modularize code into reusable, organized blocks, improving maintainability and reducing repetition.
 
@@ -725,8 +725,7 @@ print("Counter:", counter)  # Output: 1
 
 ---
 
-## 4. Exception Handling (`10. Exception Handling.pptx`)
-
+## 4. Exception Handling 
 Prevents catastrophic runtime crashes by catching and managing errors gracefully.
 
 - **Common Exceptions:** `ZeroDivisionError`, `ValueError`, `FileNotFoundError`, `SyntaxError`.
@@ -755,7 +754,7 @@ print(safe_divide("abc")) # Error: Invalid input. Please enter a numeric value.
 
 ---
 
-## 5. Object-Oriented Programming: Classes & Objects (`11. Class and Object.pptx`)
+## 5. Object-Oriented Programming: Classes & Objects 
 
 Classes serve as blueprints containing state (**attributes**) and behavior (**methods**)[cite: 48]. An object is a concrete instance of that class.
 
@@ -778,7 +777,7 @@ print("Calculator Addition:", calc.add())  # Output: 8
 
 ---
 
-## 6. Data Wrangling with Pandas (`13. RW with Pandas.pptx`)
+## 6. Data Wrangling with Pandas 
 
 Pandas provides structured data manipulation using DataFrames, enabling efficient ingestion, filtering, and export across tabular formats.
 
@@ -805,7 +804,7 @@ df.to_excel('output.xlsx', index=False)
 
 ---
 
-## 7. Data Formats: JSON & XML (`14. JSON & XML.pptx`)
+## 7. Data Formats: JSON & XML 
 
 Standard serialization schemas used in REST APIs and configuration files:
 - **JSON:** Lightweight key-value structures parsed with the built-in `json` module (`json.load` / `json.loads`).
@@ -832,8 +831,7 @@ print("XML Name:", root.find("name").text)
 
 ---
 
-## 8. Web Ingestion: REST APIs & BeautifulSoup (`14. API.pptx` & `15. HTML and BTS.pptx`)
-
+## 8. Web Ingestion: REST APIs & BeautifulSoup 
 Modern analytics pipelines often require pulling data from external endpoints or web scrapers:
 - **REST APIs:** Stateless HTTP communication using verbs like `GET`, `POST`, `PUT`, `DELETE`.
 - **BeautifulSoup (`bs4`):** HTML/XML parser used to locate tags, links, and tabular elements from web markup.
